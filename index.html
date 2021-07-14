@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <style>
+        * {
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #f4511e;
+            position: fixed;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container-fluid.text-light {
+            background-color: #f4511e;
+            padding: 50px;
+            line-height: 50px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .carousel-indicators li {
+            border-radius: 100%;
+            width: 12px;
+            height: 12px;
+            background-color: #f4511e;
+        }
+
+        #service>div>i {
+            font-size: 80px;
+            color: #f4511e;
+            margin-bottom: 20px;
+        }
+
+        #service>div>h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+        }
+
+        .price-header {
+            background-color: #f4511e;
+            border: 1px solid #f4511e;
+
+        }
+
+        .price-body {
+            border: 1px solid #f4511e;
+            line-height: 50px;
+        }
+
+        .price-body>button {
+            background-color: #f4511e;
+            color: #ffff;
+        }
+        .price-body>button:hover {
+            border:1px solid #f4511e;
+            color: #f4511e;
+        }
+        #box_1:hover {
+            box-shadow: 10px 10px 100px grey;
+        }
+        .btn-outline-secondary:hover {
+            background-color: silver;
+        }
+        .navbar-light {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light ">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="nav navbar-brand text-light">Logo</div>
+            </div>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsedemo">
+                <span class="navbar-toggler-icon  "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsedemo">
+                <ul class="nav navbar-nav nav-justified ml-auto ">
+                    <li class="nav-item"><a class="nav-link text-light ml-5" href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link text-light ml-5" href="#services">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link text-light ml-5" href="#Portfolio">PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link text-light ml-5" href="#pricing">PRICING</a></li>
+                    <li class="nav-item"><a class="nav-link text-light ml-5" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid text-light text-center">
+        <h1 style="font-size: 80px;">Company</h1>
+        <p style="font-size: 30px;">We specialize in blablabla</p>
+        <div class="clearfix d-flex justify-content-center mb-5">
+            <input type="email" class="form-control d-inline " placeholder="Email Adress" style="width: 400px;"
+                id="email">
+            <button type="button" class="btn btn-danger d-inline">Subsrible</button>
+        </div>
+        <div id="about"></div> 
+    </div><br><br><br>
+            <!-- About -->
+    <div class="container" >
+        <div class="row">
+            <div class="col-xl-8 col-sm-12 ">
+                <h1 >ABOUT COMPANY PAGE</h1><br><br>
+                <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</b><br><br><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button type="button" class="btn btn-light text-dark border-secondary mb-5">Get in Touch</button>
+            </div>
+            <div class="col-xl-4 col-sm-12 mb-5">
+                <img src="2.png" class="d-flex m-auto" width="60%">
+            </div>
+            <div class="col-xl-4 col-sm-12 text-center mt-5 mb-5">
+                <i class="fas fa-globe-americas " style="font-size: 230px;color: #f4511e"></i>
+            </div>
+            <div class="col-xl-8 col-sm-12">
+                <h1>OUR VALUES</h1><br><br>
+                <b><u>MISSION</u> : Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</b><br><br><br>
+                <p >VISION: Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+    <div id="services"></div>        <!-- SERVICES -->
+    <div class="container text-center mt-5"  style="line-height: 50px">
+        <h1>SERVICES</h1>
+        <p>What we offer</p>
+        <div class="row " id="service">
+            <div class="col-xl-4">
+                <i class="fas fa-power-off"></i>
+                <h6>POWER</h6>
+                <p class="text-muted">Lorem ipsum dolor sit amet..
+
+                </p>
+            </div>
+            <div class="col-xl-4">
+                <i class="fas fa-heart"></i>
+                <h6>LOVE</h6>
+                <p class="text-muted">Lorem ipsum dolor sit amet..
+                </p>
+            </div>
+            <div class="col-xl-4">
+                <i class="fas fa-briefcase"></i>
+                <h6>JOB DONE</h6>
+                <p class="text-muted">Lorem ipsum dolor sit amet..
+                </p>
+            </div>
+            <div class="col-xl-4">
+                <i class="fab fa-envira"></i>
+                <h6>GREEN</h6>
+                <p class="text-muted">Lorem ipsum dolor sit amet..
+                </p>
+            </div>
+            <div class="col-xl-4">
+                <i class="fas fa-certificate"></i>
+                <h6>CERTIFIED</h6>
+                <p class="text-muted">Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+            <div class="col-xl-4">
+                <i class="fas fa-wrench"></i>
+                <h6>HARD WORK</h6>
+                <p class="text-muted">Lorem ipsum dolor sit amet..
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="Portfolio"></div>               <!-- PORTFOLIO -->
+    <div class="container text-center mt-5 mb-5" style="line-height: 40px;">
+        <h1 class="mb-5">PORTFOLIO</h1>
+        <p>What we have created
+        </p>
+        <div class="row text-center text-muted">
+            <div class="col-xl-4">
+                <img src="paris.jpg" width="100%">
+                <b>Paris</b>
+                <p>Yes, we built Paris</p>
+            </div>
+            <div class="col-xl-4">
+                <img src="newyork.jpg" width="100%">
+                <b>New York</b>
+                <p>We built New York</p>
+            </div>
+            <div class="col-xl-4">
+                <img src="sanfran.jpg" width="100%">
+                <b>San Francisco</b>
+                <p>Yes, San Fran is ours</p>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <h1>WHAT OUR CUSTOMERS SAY
+        </h1>
+        <div id="myCarouse" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarouse" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarouse" data-slide-to="1"></li>
+                <li data-target="#myCarouse" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner p-5">
+                <div class="carousel-item active">
+                    <div class="content text-center">
+                        <i>"This company is the best. I am so happy with the result!"
+                        </i>
+                        <p>Michael Roe, Vice President, Comment Box
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="content text-center">
+                        <i>"One word... WOW!!"
+                        </i>
+                        <p>John Doe, Salesman, Rep Inc
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="content text-center">
+                        <i>"Could I... BE any more happy with this company?"
+                        </i>
+                        <p>Chandler Bing, Actor, FriendsAlot
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarouse" role="button" data-slide="prev">
+                <i class="fas fa-angle-left" style="color:#f4511e;font-size: 40px;"></i>
+            </a>
+            <a class="carousel-control-next text-danger" href="#myCarouse" role="button" data-slide="next">
+                <i class="fas fa-angle-right" style="color:#f4511e;font-size: 40px;"></i>
+            </a>
+        </div>
+    </div>
+
+            <!-- Pricing -->
+    <div id="pricing"></div>
+    <div class="container mt-5 text-center">
+        <h1 class="mt-3 mb-4">PRICING</h1>
+        <p class="mb-5">Choose a payment plan that works for you
+        </p>
+        <div class="row">
+            <div class="col-xl-4 mt-5" id="price_1">
+                <div id="box_1">
+                    <div class="price-header">
+                        <h1 class="text-light p-4">Basic</h1>
+                    </div>
+                    <div class="price-body text-muted">
+                        <p><b>20 </b>Lorem</p>
+                        <p><b>15 </b>Ipsum</p>
+                        <p><b>5 </b>Dolor</p>
+                        <p><b>2 </b>Sit</p>
+                        <p class="pb-4 border-bottom border-secondary"><b>Endless </b>Amet</p>
+                        <b style="font-size: 50px;">$19</b><br>
+                        <p>per month</p>
+                        <button class="btn btn-light btn-lg mb-4" type="button">Sign UP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 mt-5" id="price_2">
+                <div id="box_1">
+                    <div class="price-header">
+                        <h1 class="text-light p-4">Pro</h1>
+                    </div>
+                    <div class="price-body text-muted">
+                        <p><b>50 </b>Lorem</p>
+                        <p><b>25 </b>Ipsum</p>
+                        <p><b>10 </b>Dolor</p>
+                        <p><b>5 </b>Sit</p>
+                        <p class="pb-4 border-bottom border-secondary"><b>Endless </b>Amet</p>
+                        <b style="font-size: 50px;">$29</b><br>
+                        <p>per month</p>
+                        <button class="btn btn-light btn-lg  mb-4" type="button">Sign UP</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-4 mt-5" id="price_3">
+                <div id="box_1">
+                    <div class="price-header">
+                        <h1 class="text-light p-4">Premium</h1>
+                    </div>
+                    <div class="price-body text-muted">
+                        <p><b>100 </b>Lorem</p>
+                        <p><b>50 </b>Ipsum</p>
+                        <p><b>25 </b>Dolor</p>
+                        <p><b>10 </b>Sit</p>
+                        <p class="pb-4 border-bottom border-secondary"><b>Endless </b>Amet</p>
+                        <b style="font-size: 50px;">$49</b><br>
+                        <p>per month</p>
+                        <button class="btn btn-light btn-lg mb-4" type="button">Sign UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!-- Contact -->
+    <div id="contact"></div>
+    <div class="container">
+        <h1 class="text-center mb-4 mt-5">CONTACT</h1>
+        <div class="row">
+            <div class="col-xl-6 text-muted">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><i class="fas fa-map-marker-alt"></i> Chicago, US</p>
+                <p><i class="fas fa-phone"></i> +00 1515151515</p>
+                <p><i class="fas fa-envelope"></i> myemail@something.com</p>
+            </div>
+            <div class="col-xl-6">
+                <div class="text"></div>
+                <input type="text" class="form-control float-left mb-3" placeholder="Name"  style="width: 48%;">
+                <input type="text" class="form-control float-right" placeholder="Email" style="width: 48%;">
+                <textarea class="form-control" id="" cols="10" rows="10" placeholder="Comment"></textarea>
+                <button type="button" class="btn btn-outline-secondary text-dark float-right mt-5 mb-5">Send</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <img src="map.jpg" width="100%">
+    </div>
+    <footer class="container-fluid bg-dark text-light d-flex align-items-center justify-content-center"
+        style="width: 100%">
+        <h4 class="m-5">Bootstrap Theme Made By <a href="#">www.w3schools.com</a></h4>
+        <a href="#demo"><i class="fas fa-chevron-circle-up"></i></a>
+    </footer>
+
+</body>
+
+</html>
